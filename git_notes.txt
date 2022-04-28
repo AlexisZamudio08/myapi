@@ -65,7 +65,6 @@ Commands & utilities
 	#to add more changes 
 	git push
 
-
 	#In case you want to push some changes but not in main branch
 	git checkout -b <branch_name>
 	git push -u origin <branch_name>
