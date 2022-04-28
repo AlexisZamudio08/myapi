@@ -21,6 +21,9 @@ Commands & utilities
     Git Workflow
 
     Computer/Code Dev --> Stage --> Commit --> Server(GitHub)
+    
+    	#Go to your main folder and init the project.
+    	git init
 
 	git status -s -> Show the status of the current directory
 
