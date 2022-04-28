@@ -71,6 +71,10 @@ Commands & utilities
 	#In case you want to push some changes but not in main branch
 	git checkout -b <branch_name>
 	git push -u origin <branch_name>
+	
+	#To re-start the git 
+	rm -rf .git
+	git init
 
 
 	
