@@ -1,0 +1,70 @@
+Git -->
+	- History
+	- Code Storage
+	- Team work
+	- When a bug was introduced, it was fixed
+
+Setup environment 
+	git config --global user.name "<your_name>"  
+	git config --global user.email <your_mail@example.com>
+	git config --global core.editor "code --wait"   #To setup vscode as default
+	
+	#check config file
+	git config --global -e
+
+
+	#Core.autocrlf -> Windows=True, Mac=Input, To manage indentations between Mac, linux, windows
+	git config --global core.autocrlf input
+
+Commands & utilities
+
+    Git Workflow
+
+    Computer/Code Dev --> Stage --> Commit --> Server(GitHub)
+
+	git status -s -> Show the status of the current directory
+
+	git ignore -> To ignore files that you don't want to be tracked by git
+		creta a <.gitignore> file specifying which files should be ignored
+		e.g. 
+			.env
+			./models/
+			./views/
+		etc.
+
+	git diff -> To see the difference between the current version and the last commit
+	git diff --staged -> To see changes on stage status
+
+	git log -> To see the history of the current directory
+	git log --oneline -> To see the history of the current directory in one line
+
+	#BRANCHES
+	git branch -> To see the branches of the current directory
+	git branch -a -> To see all branches of the current directory
+	git checkout <branch_name> -> To switch to a branch
+	git checkout -b <branch_name> -> To create a new branch
+
+	*to merge branches you need to be on main branch and merge with the branch you want to merge
+	git merge <branch_name> -> To merge branches
+
+	#TAGS
+	git add <file> -> Add a file to the staging area
+	git add <file> <file2> -> Add multiple files to the staging area
+	git add .txt -> Add all the files with .txt extension to the staging area
+	git add -A -> Add all the files in the staging area
+
+	git restore <file> -> Restore a file from status area
+	git restore --staged <file> -> Restore a file from the staging area
+
+	git commit -m "message" -> Commit the changes in the staging area
+
+	git remote add origin <url> -> Add a remote repository
+
+	git push origin <branch_name> -> Push the changes to the server
+	
+
+
+
+
+    
+    
